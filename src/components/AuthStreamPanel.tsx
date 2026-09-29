@@ -17,7 +17,7 @@ export default function AuthStreamPanel() {
     try {
       const t0 = performance.now();
       const res = await fetch("/api/auth-stream");
-      if (res.status === 401) throw new Error("401 Unauthorized: no or wrong credentials.");
+      if (res.status === 401) throw new Error(`401 ${await res.text()}`);
       if (!res.ok || !res.body) throw new Error(`Request failed (${res.status})`);
 
       const reader = res.body.getReader();
