@@ -36,6 +36,12 @@ export default function Home() {
         >
           /random (plain API)
         </Link>
+        <Link
+          href="/auth"
+          className="flex h-12 w-52 items-center justify-center rounded-full border border-black/10 px-5 text-sm font-medium text-black transition-colors hover:bg-black/[.04] dark:border-white/15 dark:text-white dark:hover:bg-white/[.06]"
+        >
+          /auth (Basic Auth stream)
+        </Link>
       </div>
     </div>
   );
