@@ -11,7 +11,7 @@ export default function Home() {
           Ask the same question through Gemini two ways and compare.
         </p>
       </div>
-      <div className="flex flex-col gap-4 sm:flex-row">
+      <div className="grid gap-4 sm:grid-cols-2">
         <Link
           href="/buffered"
           className="flex h-12 w-52 items-center justify-center rounded-full border border-black/10 px-5 text-sm font-medium text-black transition-colors hover:bg-black/[.04] dark:border-white/15 dark:text-white dark:hover:bg-white/[.06]"
@@ -29,6 +29,12 @@ export default function Home() {
           className="flex h-12 w-52 items-center justify-center rounded-full bg-black px-5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
         >
           /plain (text/plain)
+        </Link>
+        <Link
+          href="/random"
+          className="flex h-12 w-52 items-center justify-center rounded-full border border-black/10 px-5 text-sm font-medium text-black transition-colors hover:bg-black/[.04] dark:border-white/15 dark:text-white dark:hover:bg-white/[.06]"
+        >
+          /random (plain API)
         </Link>
       </div>
     </div>
