@@ -6,7 +6,7 @@ export async function GET(req: NextRequest) {
   if (error) {
     return new Response(`Unauthorized: ${error}`, {
       status: 401,
-      headers: { "WWW-Authenticate": 'Basic realm="Streaming test"' },
+      headers: { "Proxy-Authenticate": 'Basic realm="Streaming test"' },
     });
   }
   return tickerEventStream();
